@@ -55,8 +55,10 @@
           </ul>
         </nav>
 
+
+
              <!--sign up form--> 
-             <form id="signupform" class="form-horizontal" role="form" method="post" >
+             <form action = reg_insert.php id="signupform" class="form-horizontal" role="form" method="post" >
              		
                     <!--validation error start-->
                                             <!-- /validation error end -->                  
@@ -105,9 +107,9 @@
 
                      <!--select district-->
                     <div class="form-group">
-                       <label for="district_id" class="col-md-4 control-label">Current District</label>
+                       <label for="area" class="col-md-4 control-label">Current District</label>
                        <div class="col-md-8">
-                           <select class="form-control selectpicker" name="district_id" id="district_id">
+                           <select class="form-control selectpicker" name="area" id="area">
                                <option disabled selected value=NULL>Select your current area</option>
                                                                       <option value="1" >Bakoliya</option>
                                                                       <option value="2" >Bandar</option>
@@ -154,14 +156,14 @@
                     
                     <!--gender selection-->
                     <div class="form-group">
-                        <label for="gender" class="col-md-4 control-label">Gender</label>
+                        <label for="sex" class="col-md-4 control-label">Sex</label>
                         <div class="col-md-8">
                             <label class="radio-inline">
-                                <input type="radio" name="gender" id="male" value="male" > Male
+                                <input type="radio" name="sex" id="male" value="male" > Male
                             </label>
                             
                             <label class="radio-inline">
-                                <input type="radio" name="gender" id="female" value="female" > Female
+                                <input type="radio" name="sex" id="female" value="female" > Female
                             </label>
                           
                         </div>                           
@@ -176,14 +178,28 @@
                     </div>
               
 
-                    
-                    <!--Sign Up Submit Button --> 
+	<!--
+	<input class="submit" name="submit" type="submit" value="Insert">
+
+
+	-->
+
+<div class = "form-group">
+           <div class="col-md-offset-4 col-md-8">
+	<input type="submit" name = submit class="btn btn-info" value="Submit">
+</div>
+</div>
+
+
+                   
+                    <!--Sign Up Submit Button
                     <div class="form-group">                                                              
                         <div class="col-md-offset-4 col-md-8">
                             <button  type="submit" class="btn btn-info"><span class="glyphicon glyphicon-ok"></span> &nbsp Sign Up</button>
                               
                         </div>
                     </div>
+ --> 
 
                     
 
@@ -198,4 +214,9 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+
+
+
+
+
 
